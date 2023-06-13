@@ -50,92 +50,108 @@
         </form>
       </div>
     </nav>
-    <div class="row">
-      <div clas="">
+    <!-- conteudo da pagina -->
+    <div class="container" style="margin-top: 50px">
+      <h1 style="text-align: center;">Como gerenciar e atualizar conteúdo em um site estático no GitHub Pages</h1>
+      <ol style="font-size: 18pt;">
+        <li>Crie uma conta no GitHub;</li>
+        <li>Crie um novo repositório;</li>
+        <li>Adicione e confirme os arquivos.</li>
+      </ol>
+    </div>
+    <p style="font-size: 18pt; margin: 50px 0px 30px 70px;">Antes de "adicionar" e "confirmar" nossos arquivos, você
+      precisa entender os estágios de um arquivo que está sendo rastreado pelo Git:</p>
 
-        <h1>Como gerenciar e atualizar conteúdo em um site estático no GitHub Pages</h1>
-        <ol>
-          <li>Crie uma conta no GitHub</li>
-          <li>Crie um repositório</li>
-          <li>Adicionar e confirmar arquivos</li>
-        </ol>
-        <p>Antes de "adicionar" e "confirmar" nossos arquivos, você precisa entender os estágios de um arquivo que está
-          sendo rastreado pelo Git.</p>
-        <b>Estado confirmado (committed)</b>
-        <p>Um arquivo está no estado confirmado quando todas as alterações feitas no arquivo foram salvas no repositório
-          local. Os arquivos no estágio confirmado são arquivos prontos para serem enviados para o repositório remoto
-          (no
-          GitHub).</p>
-
-        <b>Estado modificado (modified)</b>
-        <p>Um arquivo no estado modificado tem algumas alterações feitas nele, mas ainda não foi salvo. Isso significa
-          que
-          o estado do arquivo foi alterado de seu estado anterior no estado confirmado.</p>
-
-        <b>Estado preparado (staged)</b>
-        <p>Um arquivo no estado preparado significa que está pronto para ser confirmado. Nesse estado, todas as
-          alterações necessárias foram feitas. Portanto, o próximo passo é mover o arquivo para o estado de
-          confirmação.</p>
-        <b>Adicionando arquivos ao Git</b>
-        <p>Para adicionar arquivos no repositório Git, você precisa utilizar o comando "git add 'nome-do-arquivo", e
-          então <i>commitar</i> os arquivos, utilizando o comando "git commit -m". Dessa forma, os arquivos serão
-          adicionados
-          e as mudanças confirmadas e seu repositório no Git atualizado.
-        </p>
-        <b>Como utilizar branches</b>
-        <p>As branches são "caminhos" para fazer alterações nos arquivos. Por exemplo, podemos manter os arquivos
-          originais
-          na branch "main", e criar duas novas branches, que criarão uma cópia dos arquivos para realizar alterações
-          teste sem
-          modificar os originais. Assim caso os testes não funcionem, você pode voltar aos arquivos originais sem
-          mudanças.
-        </p>
-        <h1>Quais as melhores práticas para manter o site estático atualizado?</h1>
-        <b>Atualize as informações regularmente</b>
-        <p>Sempre que houver um jeito de otimizar o site, confirmar com a sua equipe e anotar nos <i>commits</i> as
-          informações sobre as atualizações que você fez nos arquivos.
-        </p>
-        <b>Mantenha seu CMS atualizado</b>
-        <p>Se seu site utiliza CMS(Content Management System), como o WordPress, mantenha-o sempre atualizado para
-          trazer
-          mais segurança e eficiência. Muitos bugs são consertados e novas funções são adicionadas nessas atualizações.
-        </p>
-        <b>Atualize e otimize imagens</b>
-        <p>Procure sempre utilizar imagens em formatos adequados para que o seu site não fique pesado e demore muito
-          para
-          ser carregado pelo navegador. Além disso, uma boa imagem pode trazer mais acessos ao seu site.
-        </p>
-        <h1>Lidando com problemas de versionamento em sites estáticos</h1>
-        <p>Muitos problemas podem surgir durante o desenvolvimento de um projeto, e isso pode afetar as suas versões.
-          Mas
-          existem algumas formas de lidar com esses problemas:
-        </p>
-        <ul>
-          <li>Criar branches para testar as alterações;</li>
-          <li>Commitar sempre com certeza e com a descrição de tudo o que foi feito;</li>
-          <li>Deixar comentários no código também pode ajudar à localizar as alterações.</li>
-        </ul>
-        <h1>Problemas de backup em sites estáticos</h1>
-        <p>Um dos problemas que podem acontecer em sites estáticos é uma versão recente dar defeito e não ter como
-          voltar
-          para a versão anterior, assim perdendo muitas alterações. Para evitar isso, é sempre importante testar as
-          alterações
-          em diferentes <i>branches</i> do repositório, ou utilizar uma <i>backup branch</i>, com os arquivos
-          inalterados, ou
-          alterados apenas em uma versão anterios à mais recente do projeto.
-        </p>
-
-
-        <div class="botoes-pagina">
-          <a href="grupo3.html" class="btn btn-primary">Página anterior</a>
-          <a href="index.html" class="btn btn-primary">Próxima página</a>
+    <!-- cartones -->
+    <div class="container cartones" style="margin: auto; display: flex;">
+      <div class="card" style="width:300px; height: 460px; margin:auto">
+        <img class="card-img-top cards-img" src="imagens/grupo1_card.png" alt="Card image"
+          style="width: 298px; height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Estado Confirmado (Committed)</h4>
+          <p class="card-text">Um arquivo está no estado confirmado quando todas as alterações feitas no arquivo
+            foram salvas no repositório local. Os arquivos no estágio confirmado são arquivos prontos para serem
+            enviados para o repositório remoto (no GitHub).</p>
         </div>
-        <div class="container-fluid" style="background-color: #232323; margin-top:50px;">
-          <a href="#" style="margin: 50%;"><img src="imagens/gi_logo_branco.png" style="width:60px;height:60px"></a>
+      </div>
+      <div class="card" style="width:300px; height: 460px; margin:auto">
+        <img class="card-img-top cards-img" src="imagens/grupo2_card.png" alt="Card image"
+          style="width: 298px; height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Estado modificado (modified)</h4>
+          <p class="card-text">Um arquivo no estado modificado tem algumas alterações feitas nele,
+            mas ainda não foi salvo. Isso significa que o estado do arquivo foi alterado de seu estado
+            anterior no estado confirmado.</p>
+        </div>
+      </div>
+      <div class="card" style="width:300px; height: 460px; margin: auto">
+        <img class="card-img-top cards-img" src="imagens/grupo3_card.png" alt="Card image"
+          style="width: 298px; height: 200px;">
+        <div class="card-body">
+          <h4 class="card-title">Estado preparado (staged)</h4>
+          <p class="card-text">Um arquivo no estado preparado significa que está pronto para ser confirmado.
+            Nesse estado, todas as alterações necessárias foram feitas e o próximo passo é mover o arquivo
+            para o estado de confirmação.</p>
         </div>
       </div>
     </div>
-  </div>
+    <!-- adicionando arquivos -->
+    <b>Adicionando arquivos ao Git</b>
+    <p>Para adicionar arquivos no repositório Git, você precisa utilizar o comando "git add 'nome-do-arquivo", e
+      então <i>commitar</i> os arquivos, utilizando o comando "git commit -m". Dessa forma, os arquivos serão
+      adicionados
+      e as mudanças confirmadas e seu repositório no Git atualizado.
+    </p>
+    <!-- branches -->
+    <b>Como utilizar branches</b>
+    <p>As branches são "caminhos" para fazer alterações nos arquivos. Por exemplo, podemos manter os arquivos
+      originais
+      na branch "main", e criar duas novas branches, que criarão uma cópia dos arquivos para realizar alterações
+      teste sem
+      modificar os originais. Assim caso os testes não funcionem, você pode voltar aos arquivos originais sem
+      mudanças.
+    </p>
+    <!-- melhores práticas -->
+    <h1>Quais as melhores práticas para manter o site estático atualizado?</h1>
+    <b>Atualize as informações regularmente</b>
+    <p>Sempre que houver um jeito de otimizar o site, confirmar com a sua equipe e anotar nos <i>commits</i> as
+      informações sobre as atualizações que você fez nos arquivos.
+    </p>
+    <b>Atualize e otimize imagens</b>
+    <p>Procure sempre utilizar imagens em formatos adequados para que o seu site não fique pesado e demore muito
+      para
+      ser carregado pelo navegador. Além disso, uma boa imagem pode trazer mais acessos ao seu site.
+    </p>
+    <!-- problemas de versão -->
+    <h1>Lidando com problemas de versionamento em sites estáticos</h1>
+    <p>Muitos problemas podem surgir durante o desenvolvimento de um projeto, e isso pode afetar as suas versões.
+      Mas
+      existem algumas formas de lidar com esses problemas:
+    </p>
+    <ul>
+      <li>Criar branches para testar as alterações;</li>
+      <li>Commitar sempre com certeza e com a descrição de tudo o que foi feito;</li>
+      <li>Deixar comentários no código também pode ajudar à localizar as alterações.</li>
+    </ul>
+    <!-- problemas de backup -->
+    <h1>Problemas de backup em sites estáticos</h1>
+    <p>Um dos problemas que podem acontecer em sites estáticos é uma versão recente dar defeito e não ter como
+      voltar
+      para a versão anterior, assim perdendo muitas alterações. Para evitar isso, é sempre importante testar as
+      alterações
+      em diferentes <i>branches</i> do repositório, ou utilizar uma <i>backup branch</i>, com os arquivos
+      inalterados, ou
+      alterados apenas em uma versão anterios à mais recente do projeto.
+    </p>
+
+
+    <div class="botoes-pagina">
+      <a href="grupo3.html" class="btn btn-primary">Página anterior</a>
+      <a href="index.html" class="btn btn-primary">Próxima página</a>
+    </div>
+    <div class="container-fluid" style="background-color: #232323; margin-top:50px;">
+      <a href="#" style="margin: 50%;"><img src="imagens/gi_logo_branco.png" style="width:60px;height:60px"></a>
+    </div>
 </body>
 
 </html>
