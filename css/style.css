@@ -31,6 +31,10 @@
   height: 189px;
 }
 
+.card {
+  margin:auto;
+}
+
 .rodape {
   background-color: #282828;
   color: antiquewhite;
@@ -65,12 +69,12 @@ body {
 }
 
 
-.area {
+/* .area {
   background: #4e54c8;
   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
   width: 100%;
   min-height: 100%;
-}
+} */
 
 .circles {
   position: absolute;
