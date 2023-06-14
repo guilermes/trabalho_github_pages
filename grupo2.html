@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -68,40 +68,59 @@
       <h1 style="text-align: center;">Quais linguagens de programação são necessárias para criar um site
         estático</h1>
       <div class="container" style="margin-top: 50px;">
-        <p style="font-size: 16pt;">Um site estático pode conter várias linguagens diferentes em sua composição.
-          Atualmente, as linguagens mais
-          comuns usadas na criação de sites são:</p>
-        <div class="container" style="margin-top: 50px; display: flex;">
-          <ol style="font-size: 16pt; margin: 60px 0px 0px 100px;">
-            <li>HTML;</li>
-            <li>CSS;</li>
-            <li>Javascript.</li>
-          </ol>
-          <img src="imagens/curtis.jpg" style="width: 400px;height: 200px;">
+        <p style="font-size: 14pt;">Diversas linguagens podem ser usadas na criação de sites estáticos, e cada uma delas
+          tem sua própria função no site: algumas são usadas na estrutura do site, outras no design, outras na parte
+          lógica,
+          outras no sistema de banco de dados, e entre diversas outras funções.</p>
+        <img src="imagens/web-lings.jpg" style="width: 400px;height: 200px; margin-left: 330px;">
+      </div>
+    </div>
+    <p style="font-size: 14pt;color: azure; margin: 50px 0px 30px 150px;">Um site estático pode conter várias linguagens
+      diferentes
+      em sua composição.<br> Atualmente, as linguagens mais comuns usadas na criação de sites são:</p>
+    <!-- cards -->
+    <div class="container cartones" style="margin: auto; display: flex;">
+      <div class="card" style="width:300px; height: 360px; margin:auto">
+        <img class="card-img-top cards-img" src="imagens/html.png" alt="Card image"
+          style="width: 125px; height: 130px; align-self: center; margin: 30px 0px 30px 0px;">
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 14pt;">HTML</h4>
+          <p class="card-text" style="font-size: 12pt;">A Linguagem de Marcação de Hipertexto, o <b>HTML</b>,
+            é usado na estrutura de um site, definindo os elementos que serão inseridos na página.</p>
         </div>
       </div>
-      <p>Diversas linguagens podem ser usadas na criação de sites estáticos, e cada uma delas tem sua própria função
-        no
-        site: algumas são usadas na estrutura do site, outras no design, outras na parte lógica, outras no sistema de
-        banco
-        de dados, e entre diversas outras funções.</p>
-      <p>Por exemplo a Linguagem de Marcação de Hipertexto, o <b>HTML</b>, é usado na estrutura de um site, definindo
-        os
-        elementos a serem inseridos num site e como serão o nome de suas classes para referência posterior em outras
-        partes
-        do site.</p>
-      <p>A Folha de Estilos em Cascata, o <b>CSS</b>, é usado para dar estilo e criar o design do site, e é usado em
-        conjunto com o HTML.</p>
-      <p>O <b>Javascript</b> é uma linguagem de programação, usada para infinitas funções na criação de um site.</p>
+      <div class="card" style="width:300px; height: 360px; margin:auto">
+        <img class="card-img-top cards-img" src="imagens/css.png" alt="Card image"
+          style="width: 250px; height: 200px;align-self: center;">
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 14pt;">CSS</h4>
+          <p class="card-text" style="font-size: 12pt;">A Folha de Estilos em Cascata, o <b>CSS</b>, é usado para dar
+            estilo e criar o design do site, e é usado em conjunto com o HTML.</p>
+        </div>
+      </div>
+      <div class="card" style="width:300px; height: 360px; margin:auto">
+        <img class="card-img-top cards-img" src="imagens/js.png" alt="Card image"
+          style="width: 200px; height: 130px; align-self: center; margin: 30px 0px 30px 0px;">
+        <div class="card-body">
+          <h4 class="card-title" style="font-size: 14pt;">JavaScript</h4>
+          <p class="card-text" style="font-size: 12pt;">O <b>Javascript</b> é uma linguagem de programação, usada para
+            infinitas funções na criação de um site.</p>
+        </div>
+      </div>
     </div>
-    <h1>Quais são as melhores ferramentas para criar um site estático</h1>
-    <!-- carrossel -->
+    <!-- fim dos cards -->
+    <!-- ferramentas  -->
     <div class="container">
+      <h4 style="font-size: 22pt;color: azure; margin: 50px 0px 30px 0px;">Quais são as melhores ferramentas para criar
+        um site estático?</h4>
+      <!-- carrossel -->
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -147,7 +166,7 @@
               <p>Eleventy é um recém-chegado relativo ao campo dos geradores de sites estáticos. Este software em
                 particular depende de JavaScript e Node.js. Isso significa que você precisará de algum nível de
                 familiaridade
-                com a linguagem JavaScript para usá-la efetivamente..</p>
+                com a linguagem JavaScript para usá-la efetivamente.</p>
             </div>
           </div>
           <div class="carousel-item">
@@ -157,7 +176,7 @@
               <h5>Pelican</h5>
               <p>Pelican é um gerador de sites estáticos pouco conhecido que é tudo sobre Python. Se você está
                 familiarizado com Python, você pode usar o software para criar páginas estáticas usando Markdown e
-                reStructuredText..</p>
+                reStructuredText.</p>
             </div>
           </div>
         </div>
@@ -172,21 +191,26 @@
       </div>
     </div>
     <!-- fim do carrossel -->
-    <h1>Como escolher um tema para o site estático</h1>
-    <p>Os sites estáticos são uma forma simples e eficiente de criar e hospedar páginas da web. Eles são compostos por
-      arquivos HTML, CSS e JavaScript que são exibidos exatamente como foram criados, sem a necessidade de
-      processamento
-      no servidor. Aqui estão alguns temas populares para sites estáticos:</p>
-
-    <ol>
-      <li>Portfólio pessoal;</li>
-      <li>Blog;</li>
-      <li>Página de destino (Landing page);</li>
-      <li>Documentação técnica.</li>
-    </ol>
-    <br>
-    <h1>Qual é o custo envolvido na criação de um site estático no GitHub Pages</h1>
-    <img src="imagens/Formas_de_pagamento_Git_hub_pages.png"><br>
+    <!-- tema site estatico -->
+    <div class="container" style="color: azure;">
+      <div class="glass" style=" width: 50%;margin-top: 30px;">
+        <h4 style="font-size: 22pt;">Como escolher um tema para o site estático</h4>
+        <p>Os sites estáticos são uma forma simples e eficiente de criar e hospedar páginas da web.
+          Eles são compostos por arquivos HTML, CSS e JavaScript que são exibidos exatamente como foram criados,
+          sem a necessidade de processamento no servidor. Aqui estão alguns temas populares para sites estáticos:</p>
+        <ol>
+          <li>Portfólio pessoal;</li>
+          <li>Blog;</li>
+          <li>Página de destino (Landing page);</li>
+          <li>Documentação técnica.</li>
+        </ol>
+      </div>
+    </div>
+    <!-- custo envolvido -->
+    <div class="container" style="margin: 50px 0px 30px 100px;">
+      <h4 style="font-size: 22pt; color: azure; margin-bottom: 20px;">Qual é o custo envolvido na criação de um site estático no GitHub Pages</h4>
+      <img src="imagens/Formas_de_pagamento_Git_hub_pages.png" style="width: 600px;height: 400px;">
+    </div>
     <!-- botoes-pagina -->
     <div class="contianer botoes-pagina" style="margin: 50px 0px 10px 100px;">
       <a href="grupo1.html" class="btn btn-primary">Página anterior</a>
