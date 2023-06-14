@@ -6,11 +6,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/javascript.js"></script>
-  <link href="../css/style.css" rel="stylesheet">
+  <script src="js/javascript.js"></script>
+  <link href="css/style.css" rel="stylesheet">
   <title>Trabalho de PW</title>
 </head>
+
 
 <body>
   <!-- background-image -->
@@ -51,14 +63,13 @@
       </div>
     </nav>
 
-    <h1>Quais são as melhores práticas para otimização de desempenho em sites estáticos</h1>
-
-    <p>A otimização de um site envolve ações e estratégias para melhorar a qualidade da experiência dos visitantes,
+    <h1 style="color: azure; text-align: center;">Quais são as melhores práticas para otimização de desempenho em sites estáticos</h1>
+    <p style="color: azure; text-align: center;">A otimização de um site envolve ações e estratégias para melhorar a qualidade da experiência dos visitantes,
       aumentar o tráfego, a acessibilidade e as taxas de conversão. Além disso, busca melhorar o posicionamento nos
       mecanismos de busca. O objetivo principal é atrair mais visitantes, oferecendo uma ótima experiência, o que leva a
       mais visitas, conversões e fidelização dos clientes.</p>
 
-    <ol>
+    <ol style="color: azure;">
       <li><b>Minificação de arquivos;</b></li><br>
       <li><b>Compactação de arquivos;</b></li><br>
       <li><b>Cache de conteúdo;</b></li><br>
@@ -66,23 +77,58 @@
       <li><b>Carregamento assíncrono de scripts;</b></li><br>
       <li><b>Monitoramento e otimização contínua.</b></li><br>
     </ol>
+<br><br><br><br><br>
+    <h2 style="color: azure; text-align: center;">Integrando um formulario de contato no seu site estatico</h2>
 
-    <h1>Como integrar um formulário de contato em um site estático</h1>
-      <p>Existem várias maneiras de integrar um formulário de contato em um site estático. Uma opção é usar um serviço como o Formspree, que permite criar formulários para sites estáticos. Com ele, você pode apontar seu
-        formulário para a URL fornecida pelo serviço e receber mensagens direto no seu e-mail.
-        Para adicionar um formulário de contato ao seu site estático no GitHub usando o Formspree, você pode seguir os
-        seguintes passos:
-      </p>
-    <ol>
-      <li>Crie uma conta no Formspree e configure um novo formulário</li><br>
-      <img src="imagens/formulario_passo1.png" float="right" width="500px" height="400px">
-      <li>Adicione o código HTML do formulário fornecido pelo Formspree à sua página de contato no repositório do
-        GitHub.</li>
-      <img src="imagens/formulario_passo2.png" float="right" width="800px" height="auto">
-      <li>Quando os visitantes do seu site preencherem e enviarem o formulário, as respostas serão enviadas para o
-        endereço de e-mail que você especificou ao configurar o formulário no Formspree.</li>
-      <img src="imagens/formulario_passo3.png" float="right" width="500px" height="400px">
-    </ol>
+    <!-- carrossel -->
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="imagens/formulario_passo1.png" alt="First slide" style="width: 200px;height: 400px;">
+            <div class="carousel-caption d-none d-md-block"
+              style="background: linear-gradient( rgba(23,23,23,1), rgba(23,23,23,1));">
+              <h5>Passo 1</h5>
+              <p>Crie uma conta no Formspree e configure um novo formulário</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagens/formulario_passo2_2.png" alt="Second slide" style="width: 200px;height: 400px;">
+            <div class="carousel-caption d-none d-md-block"
+              style="background: linear-gradient( rgba(23,23,23,1), rgba(23,23,23,1));">
+              <h5>Passo 2</h5>
+              <p>Adicione o código HTML do formulário fornecido pelo Formspree à sua página de contato no repositório do
+                GitHub.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="imagens/formulario_passo3.png" alt="Third slide"
+              style="width: 200px; height: 400px;">
+            <div class="carousel-caption d-none d-md-block"
+              style="background: linear-gradient( rgba(23,23,23,1), rgba(23,23,23,1));">
+              <h5>Passo 3</h5>
+              <p>Quando os visitantes do seu site preencherem e enviarem o formulário, as respostas serão enviadas para o
+                endereço de e-mail que você especificou ao configurar o formulário no Formspree.</p>
+            </div>
+          </div>
+         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- fim do carrossel -->
+    <br><br>
     <div class="botoes-pagina">
           <a href="grupo2.html" class="btn btn-primary">Página anterior</a>
           <a href="grupo4.html" class="btn btn-primary">Próxima página</a>
@@ -90,6 +136,7 @@
         <div class="container-fluid" style="background-color: #232323; margin-top:50px;">
           <a href="#" style="margin: 50%;"><img src="imagens/gi_logo_branco.png" style="width:60px;height:60px"></a>
         </div>
+        
   </div>
 </body>
 
